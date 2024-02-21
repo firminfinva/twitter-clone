@@ -16,7 +16,7 @@ export default function Timeline(){
             "tweet_author_title": "CNN",
             "tweet_authors": "CNN",
     
-            "tweet_time": "2h",
+            "tweet_time": "7m",
             "tweet_actions":{
                 "reply":"57",
                 "retweet":"144",
@@ -53,7 +53,7 @@ export default function Timeline(){
             "tweet_body": {
               "tweet_author_title": "Twitter",
               "tweet_authors": "Twitter",
-              "tweet_time": "2h",
+              "tweet_time": "Oct 29",
               "tweet_actions":{
                     "reply":"6.8K",
                     "retweet":"36.6K",
@@ -71,7 +71,7 @@ export default function Timeline(){
             "tweet_body": {
               "tweet_author_title": "Twitter",
               "tweet_authors": "Twitter",
-              "tweet_time": "2h",
+              "tweet_time": "Oct 24",
               "tweet_actions":{
                 "reply":"118.k",
                 "retweet":"785.k",
@@ -90,7 +90,7 @@ export default function Timeline(){
               "tweet_author_title": "Twitter",
               "tweet_authors": "Twitter",
               "tweet_image": Image3,
-              "tweet_time": "2h",
+              "tweet_time": "Oct 24",
               "tweet_actions":{
                     "reply":"118.k",
                     "retweet":"785.k",

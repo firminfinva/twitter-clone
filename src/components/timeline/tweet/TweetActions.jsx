@@ -5,6 +5,7 @@ import React from "../../../assets/React.png"
 import Share from "../../../assets/Share.png"
 
 export default function TweetActions(props){
+
     return (<div className="tweet-actions">
             <TweetAction icon={Reply} value={props.value?.reply}/>
             <TweetAction icon={Retweet} value={props.value?.retweet}/>

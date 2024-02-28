@@ -3,13 +3,13 @@ import TweetText from "./TweetText"
 import TweetActions from "./TweetActions"
 import TweetImage from "./TweetImage"
 
-export default function TweetContent(props){
+export default function TweetContent({value}){
 
     return (<div className="tweet-content">
-        <TweetBody value ={props.value} />
-        <TweetText value={props.value.tweet_text} />
-        <TweetImage value={props.value.tweet_image}/>
+        <TweetBody value ={value} />
+        <TweetText value={value.tweet_text} />
+        <TweetImage value={value.tweet_image}/>
         
-        <TweetActions value={props.value.tweet_actions}/>
+        <TweetActions value={value.tweet_actions}/>
     </div>)
 }

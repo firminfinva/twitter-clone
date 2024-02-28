@@ -1,5 +1,5 @@
-export default function TweetTitleAuthor(props){
+export default function TweetTitleAuthor({value}){
     return (<div className="tweet-title-author">
-       {props.value}
+       {value}
     </div>)
 }

@@ -1,4 +1,4 @@
-export default function TweetAction(props){
+export default function TweetAction({icon, value}){
     return (<div className="tweet-action">
-        <img src={props.icon} />{props.value}</div>)
+        <img src={icon} />{value}</div>)
 }

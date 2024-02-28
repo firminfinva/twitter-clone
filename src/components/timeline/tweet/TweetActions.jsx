@@ -4,13 +4,13 @@ import Retweet from "../../../assets/Retweet.png"
 import React from "../../../assets/React.png"
 import Share from "../../../assets/Share.png"
 
-export default function TweetActions(props){
+export default function TweetActions({value}){
 
     return (<div className="tweet-actions">
-            <TweetAction icon={Reply} value={props.value?.reply}/>
-            <TweetAction icon={Retweet} value={props.value?.retweet}/>
-            <TweetAction icon={React} value={props.value?.react}/>
-            <TweetAction icon={Share} value={props.value?.share}/>
+            <TweetAction icon={Reply} value={value?.reply}/>
+            <TweetAction icon={Retweet} value={value?.retweet}/>
+            <TweetAction icon={React} value={value?.react}/>
+            <TweetAction icon={Share} value={value?.share}/>
           
     </div>)
 }

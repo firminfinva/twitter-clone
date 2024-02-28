@@ -1,7 +1,7 @@
 import TweetTitle from "./TweetTitle"
 
-export default function TweetBody(props){
+export default function TweetBody({value}){
    return (<div className="tweet-body">
-    <TweetTitle value = {props.value}/>
+    <TweetTitle value = {value}/>
    </div>)
 }

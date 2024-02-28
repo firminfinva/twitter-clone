@@ -1,9 +1,10 @@
 import TweetAvatar from "./TweetAvatar"
 import TweetContent from "./TweetContent"
 
-export default function Tweet(props){
+export default function Tweet({value}){
+    console.log(value)
     return (<div className="tweet">
-        <TweetAvatar image={props.value["tweet_avatar"]}/>
-        <TweetContent value= {props.value.tweet_body} />
+        <TweetAvatar image={value["tweet_avatar"]}/>
+        <TweetContent value= {value.tweet_body} />
     </div>)
 }

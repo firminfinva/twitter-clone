@@ -1,3 +1,3 @@
-export default function TweetImage(props){
-    return (<img className="tweet-image" src={props.value} />)
+export default function TweetImage({value}){
+    return (<img className="tweet-image" src={value} />)
 }

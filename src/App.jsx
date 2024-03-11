@@ -7,9 +7,10 @@ function App() {
 
   return (
     <>
-      <Trends/>
+        <Sidebar/>
       <Timeline/>
-      <Sidebar/>
+      <Trends/>
+    
     </>
   )
 }

@@ -1,3 +1,36 @@
+import Button from "../timeline/tweet-editor/Button";
+import TweetAction from "../timeline/tweet/TweetAction";
+import MenuButton from "../trends/MenuButton";
+import Home from "./../../assets/Home.png"
+import Normal from "./../../assets/Normal.png"
+import Explore from "./../../assets/Explore.png"
+import Notifications from "./../../assets/Notifications.png"
+import Messages from "./../../assets/Messages.png"
+import Bookmarks from "./../../assets/Bookmarks.png"
+import Lists from "./../../assets/Lists.png"
+import Profile from "./../../assets/Profile.png"
+import More from "./../../assets/More.png"
+
+
 export default function Sidebar() {
-    return(<div>Sidebar</div>)
+
+    const menu = [
+        {img: Normal, value: ""},
+        {img: Home, value: "Home"},
+        {img: Explore, value: "Explore"},
+        {img: Notifications, value: "Notifications"},
+        {img: Messages, value: "Messages"},
+        {img: Bookmarks, value: "Bookmarks"},
+        {img: Lists, value: "Lists"},
+        {img: Profile, value: "Profile"},
+        {img: More, value: "More"},
+    ]
+    return (<div className="sidebar">
+        <div>
+            {menu.map((me)=> <MenuButton  icon={me.img} value={me.value} />)}
+        </div>
+      
+        
+        <Button/>
+    </div>)
 }

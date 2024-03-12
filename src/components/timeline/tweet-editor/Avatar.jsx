@@ -1,6 +1,6 @@
-import Profile from '../../../assets/Profile.png'
+import ProfilePhoto from '../../../assets/Profile-Photo.png'
 export default function Avatar(){
     return (<div className="avatar">
-        <img src={Profile} />
+        <img src={ProfilePhoto } />
     </div>)
 }

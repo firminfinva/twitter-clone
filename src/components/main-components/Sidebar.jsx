@@ -27,7 +27,7 @@ export default function Sidebar() {
     ]
     return (<div className="sidebar">
         <div>
-            {menu.map((me)=> <MenuButton  icon={me.img} value={me.value} />)}
+            {menu.map((me)=> <MenuButton key={me.value}  icon={me.img} value={me.value} />)}
         </div>
       
         

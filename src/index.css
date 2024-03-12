@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
-
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
 body {
   background-color: black;
   color: white;
@@ -417,15 +419,6 @@ body {
 
   width: 100%;
 }
-/* .trends-editor-input {
-  height: 30px;
-  border: none;
-  outline: none;
-  font-size: 1rem;
-  background-color: #202327;
-  color: #fff;
-  resize: none;
-} */
 .trends-input {
   display: flex;
   gap: 30px;
@@ -434,89 +427,77 @@ body {
   border-radius: 50px;
   background-color: #202327;
   padding: 5px;
-  margin: 20px 10px;
+  margin: 10px 10px;
 }
-/* 
-.trendings {
-  flex-direction: column;
-  inline-size: 100px;
-  font-size: 2px;
-}
-.trending {
+.trends-block, .who-to-follow{
   display: flex;
-  
-}
+  flex-direction: column;
+  gap: 10px;
+  background-color: #202327;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 10px;
+  height: auto;}
 
-.trendings span {
-  color: #6e767d;
-  font-size: 10px;
+.trends-title {
+  display: flex;
+  justify-content: space-between;
 }
-
-.trendings p {
-  color: #6e767d;
-  font-size: 10px;
+a{
+  color: #1d9bf0;
 }
-
-.trendings h2 {
+.trends-title > h6{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+.trends-contents{
+  display: flex;
+  justify-content: space-between;
+}
+.trends-contents-tweet{
+  display: flex;
+  flex-direction: column;
+}
+.trends-contents-tweet>span{
+  font-size: 13px;
+  font-weight: 700;
+}
+.trends-contents-tweet>span:first-of-type, .trends-contents-tweet>span:last-of-type{
+  color: #7b7e81;
+  font-weight: 100;
   font-size: 12px;
 }
-.trendingNotifications {
+.follow-contents{
   display: flex;
   justify-content: space-between;
-  padding: 0.2rem 0rem;
 }
-.trendingListMessage {
-  width: 90%;
-  display: block;
-  flex-direction: column;
-  font-family: "Inter", sans-serif;
-  justify-content: space-between;
-  padding: 1rem;
-  margin: 10px 1rem;
-  border-radius: 20px;
-  background-color: #202327;
+.follow-contents>div>img{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
 }
-.trendingTitle {
-  font-size: 22px;
-}
-.trendingFollow {
-  flex: 0 0 50px;
-}
-.trendingFollow-body {
+.follow-contents>div{
   display: flex;
-  flex-direction: column;
-  gap: 3px;
+  gap: 5px;
 }
-.trendingFollow-body p {
-  color: #6e767d;
+.follow-contents>button{
+  font-size: 10px;
+  height: 22px;
+  padding: 1px 6px;
+  border-radius: 10px;
+  border: none;
+}
+.follow-contents-title1{
+  font-size: 12px;
+  max-width: 120px;
+
+}
+.follow-contents-title1>img{
+  width: 10px;
+}
+.follow-contents-title2{
   font-size: 11px;
+  color: #7b7e81;
 }
-.trendingFollow-title {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 10px;
-  font-size: 1.1rem;
-}
-.FollowTrending {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 10px 10px;
-  border-bottom: 1px solid #2f3336;
-}
-.ButtonSeeMoreTrending {
-  text-decoration: none;
-  color: #ddd;
-}
-.trendingFollow-title {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 2px;
-  font-size: 0.8rem;
-}
-.buttonIconAction {
-  background: rgb(0, 0, 0);
-}  */

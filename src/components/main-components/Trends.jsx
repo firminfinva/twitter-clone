@@ -10,6 +10,9 @@ export default function Trends(){
             </div>
            <TreendsBlock icon={Options} title="Trends for you" />
            <WhoToFollow title="Who to Follow" />
+           <div className="trends-terms">
+            Terms of Service Privacy Cookie Policy Imprint Ads info More ... @2021 Twitter, Inc
+           </div>
         </div>)
    
 }

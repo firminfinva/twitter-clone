@@ -9,7 +9,9 @@ import Messages from "./../../assets/Messages.png"
 import Bookmarks from "./../../assets/Bookmarks.png"
 import Lists from "./../../assets/Lists.png"
 import Profile from "./../../assets/Profile.png"
+import UserProfile from "./../../assets/Profile-Photo.png"
 import More from "./../../assets/More.png"
+import ThreeDot from "./../../assets/More-2.png"
 
 
 export default function Sidebar() {
@@ -26,11 +28,20 @@ export default function Sidebar() {
         {img: More, value: "More"},
     ]
     return (<div className="sidebar">
+
         <div>
             {menu.map((me)=> <MenuButton key={me.value}  icon={me.img} value={me.value} />)}
+             <Button/>
         </div>
-      
-        
-        <Button/>
+        <div className="space"></div>
+     
+        <div className="sidebar-profile">
+            <img src={UserProfile} />
+            <div className="user-info">
+                <div>Bradley Ortiz</div>
+                <div>@bradley_</div>
+            </div>
+            <img src={ThreeDot} />
+        </div>
     </div>)
 }

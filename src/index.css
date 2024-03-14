@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
 *{
   font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: white;
+}
+a{
+  color: white;
 }
 :root{
   --timeline-width: 50vw;
@@ -253,6 +258,9 @@ body {
   background: rgba(0, 80, 0, 0.2);
   border-radius: 50%;
 }
+
+
+
 .tweet-action-share:hover,
 .tweet-action-share:hover .tweet-share svg path,
 .tweet-action-share:hover .tweet-share {
@@ -573,4 +581,30 @@ a{
 }
 .trends-terms{
   padding: 20px;
+}
+.profile-back{
+  width: 100px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid blue;
+  margin: 10px;
+}
+.background-profile{
+  height: 100px;
+  width: 100%;
+  background-color: #d9d9d9;
+}
+.profile-img{
+  margin-top: -75px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 50px;
+    object-fit: cover;
+}
+.profile-title{
+  margin-left: 25px;
+}
+.profile-title>div{
+  color: gray;
 }

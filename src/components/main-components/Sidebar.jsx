@@ -12,6 +12,7 @@ import Profile from "./../../assets/Profile.png"
 import UserProfile from "./../../assets/Profile-Photo.png"
 import More from "./../../assets/More.png"
 import ThreeDot from "./../../assets/More-2.png"
+import {Link} from "react-router-dom"
 
 
 export default function Sidebar() {
@@ -33,8 +34,8 @@ export default function Sidebar() {
             {menu.map((me)=> <MenuButton key={me.value}  icon={me.img} value={me.value} />)}
              <Button/>
         </div>
-        <div className="space"></div>
-     
+        
+   
         <div className="sidebar-profile">
             <img src={UserProfile} />
             <div className="user-info">
@@ -43,5 +44,6 @@ export default function Sidebar() {
             </div>
             <img src={ThreeDot} />
         </div>
+       
     </div>)
 }

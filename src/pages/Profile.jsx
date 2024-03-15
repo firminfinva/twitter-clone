@@ -1,3 +1,10 @@
+import GoBackButton from "../components/globelComponants/GoBackButton";
+
 export default function Profile(){
-    return (<div>Profile</div>)
-}
+    return (
+        <>
+            <GoBackButton/>
+            <div>Profile</div>
+        </>
+       
+    )}

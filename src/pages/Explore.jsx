@@ -1,3 +1,10 @@
+import GoBackButton from "../components/globelComponants/GoBackButton";
+
 export default function(){
-    return (<div> Explore  pages</div>)
+    return (
+        <>
+            <GoBackButton/>
+             <div> Explore  pages</div>
+        </>
+   )
 }

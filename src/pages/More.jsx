@@ -1,3 +1,10 @@
+import GoBackButton from "../components/globelComponants/GoBackButton";
+
 export default function More(){
-    return (<div>More</div>)
+    return (
+        <>
+            <GoBackButton/>
+            <div>More</div>
+        </>
+    )
 }

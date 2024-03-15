@@ -1,3 +1,10 @@
+import GoBackButton from "../components/globelComponants/GoBackButton";
+
 export default function Bookmarks(){
-    return(<div>Bookmarks</div>)
+    return(
+        <>
+            <GoBackButton/>
+            <div>Bookmarks</div>
+        </>)
+        
 }

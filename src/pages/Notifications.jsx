@@ -1,3 +1,10 @@
+import GoBackButton from "../components/globelComponants/GoBackButton";
+
 export default function Notifications(){
-    return(<div>Notifications</div>)
-}
+    return(
+        <>
+            <GoBackButton/>
+            <div>Notifications</div>
+        </>
+        
+        )}

@@ -1,5 +1,6 @@
-import { Link, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { Db } from "../components/timeline/tweet/Tweets"
+import GoBackButton from "../components/globelComponants/GoBackButton"
 export default function UserProfile(){
     const {userId} = useParams()
    
@@ -10,8 +11,8 @@ export default function UserProfile(){
 
 
 
-    return(<div>
-        <button className="profile-back"><Link to="/home">Back</Link></button>
+    return(<div className="userProfile">
+        <GoBackButton/>
         <div className="background-profile"></div>
         <img className="profile-img" src={theuser["tweet_avatar"]}/>
         <div className="profile-title">

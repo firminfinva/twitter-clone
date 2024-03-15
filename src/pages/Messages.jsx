@@ -1,3 +1,9 @@
+import GoBackButton from "../components/globelComponants/GoBackButton";
+
 export default function Messages(){
-    return(<div>Messages</div>)
-}
+    return(
+        <>
+            <GoBackButton/>
+            <div>Messages</div>
+        </>
+)}

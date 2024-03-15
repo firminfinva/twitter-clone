@@ -1,6 +1,7 @@
-import Profile from '../../../assets/Profile.png'
+import { Link } from 'react-router-dom'
+import ProfilePhoto from '../../../assets/Profile-Photo.png'
 export default function Avatar(){
     return (<div className="avatar">
-        <img src={Profile} />
+       <Link to="/Profile"><img src={ProfilePhoto } /></Link> 
     </div>)
 }

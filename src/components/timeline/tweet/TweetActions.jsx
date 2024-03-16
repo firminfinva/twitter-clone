@@ -64,7 +64,7 @@ export default function TweetActions({value}){
     }
 
     return (<div className="tweet-actions">
-            <div className="tweet-action-share" onClick={handleClick1} onMouseEnter={handleHover1} onMouseLeave={handleLeave1}>
+            <div className="tweet-action-share custom-tooltip" title="reply" onClick={handleClick1} onMouseEnter={handleHover1} onMouseLeave={handleLeave1}>
                 <div>
                     <svg className="tweet-share"  style={onHover1 ? hoverStyle1 : baseStyle1}  width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="34" height="34" rx="17" fill={onHover1 ? 'hsl(202, 100%, 84%)': "black"} />
@@ -74,10 +74,8 @@ export default function TweetActions({value}){
                     <TweetAction color={onHover1 ? hoverStyle1.fill : baseStyle1.fill} value={value?.reply}/>
              
                 </div>   
-                <span style={{display: onClick1? "flex": "none"}}>Reply</span>
-               
             </div>
-           <div className="tweet-action-reply" onClick={handleClick2} onMouseEnter={handleHover2} onMouseLeave={handleLeave2}>
+           <div className="tweet-action-reply" title="retweet" onClick={handleClick2} onMouseEnter={handleHover2} onMouseLeave={handleLeave2}>
                 <div>
                     <svg className="tweet-reply"  style={onHover2 ? hoverStyle2 : baseStyle1} width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="68" height="68" rx="34" fill={onHover2 ? 'hsl(202, 100%, 84%)': "black"} />
@@ -85,10 +83,9 @@ export default function TweetActions({value}){
                     </svg>
                     <TweetAction color={onHover2 ? hoverStyle2.fill : baseStyle1.fill} value={value?.retweet}/>
                 </div>  
-                <span style={{display: onClick2? "flex": "none"}}>Report</span>  
            </div>
            
-            <div className="tweet-action-vector" onClick={handleClick3} onMouseEnter={handleHover3} onMouseLeave={handleLeave3}>
+            <div className="tweet-action-vector" title="react" onClick={handleClick3} onMouseEnter={handleHover3} onMouseLeave={handleLeave3}>
                 <div>
                     <svg className="tweet-vector"  style={onHover3 ? hoverStyle3 : baseStyle1} width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="34" height="34" rx="17" fill={onHover3 ? 'hsl(202, 100%, 84%)': "black"}/>
@@ -96,9 +93,8 @@ export default function TweetActions({value}){
                     </svg>
                     <TweetAction color={onHover3 ? hoverStyle3.fill : baseStyle1.fill} value={value?.react}/>
                 </div>
-                <span style={{display: onClick3? "flex": "none"}}>like</span>  
             </div>
-            <div className="tweet-action-share" onClick={handleClick4} onMouseEnter={handleHover4} onMouseLeave={handleLeave4}>
+            <div className="tweet-action-share" title="share" onClick={handleClick4} onMouseEnter={handleHover4} onMouseLeave={handleLeave4}>
                 <div>
                     <svg className="tweet-share"  style={onHover4 ? hoverStyle4 : baseStyle1} width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="34" height="34" rx="17" fill={onHover4 ? 'hsl(202, 100%, 84%)': "black"}/>
@@ -108,7 +104,6 @@ export default function TweetActions({value}){
         
                     <TweetAction color={onHover4 ? hoverStyle4.fill : baseStyle1.fill} value={value?.share}/>
                 </div>
-                <span style={{display: onClick4? "flex": "none"}}>Share</span> 
             </div>
             
           

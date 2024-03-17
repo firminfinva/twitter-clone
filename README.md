@@ -1,8 +1,21 @@
-# React + Vite
+# Installation :
+###  cloning : 
+    git clone https://github.com/firminfinva/twitter-clone.git  
+###  Install dependencies: 
+    cd twitter-clone 
+    npm install 
+# Run the application: 
+    npm start 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Live version of the app 
+    https://twitter-clone-six-sooty.vercel.app 
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Features: 
+    - Navigation bar: Provides quick access to explore , notifications,     messages, bookmarks , lists, profile and more. 
+    - Feed: Displays a list of tweets . Each tweet typically includes:
+    User avatar and username(user title). 
+    - Tweet content (text and potentially embedded media like images). 
+    - Animation on tweet element like Like, Retweet,  Reply ans Share. 
+    - Timestamp indicating when the tweet was posted. 
+    - Trending topics: A section showcasing currently trending hashtags or keywords on the platform. 
+    - Who to follow: Suggestions for users to follow based on their interests or connections. (Optional) 

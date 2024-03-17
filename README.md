@@ -1,7 +1,7 @@
 Installation :
-    - cloning : \
-        git clone https://github.com/firminfinva/twitter-clone.git  \
-    - Install dependencies: \
+        - cloning : \
+                 git clone https://github.com/firminfinva/twitter-clone.git  \
+         - Install dependencies: \
         cd twitter-clone \
         npm install \
 Run the application: \

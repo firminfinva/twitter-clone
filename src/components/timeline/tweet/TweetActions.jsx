@@ -48,20 +48,6 @@ export default function TweetActions({value}){
         setOnHover4(false)
         setOnClick4(false)
     }
-    function handleClick1(){
-        setOnClick1(true)
-    }
-    function handleClick2(){
-        setOnClick2(true)
-    }
-
-    function handleClick3(){
-        setOnClick3(true)
-    }
-
-    function handleClick4(){
-        setOnClick4(true)
-    }
 
     return (<div className="tweet-actions">
             <div className="tweet-action-share custom-tooltip" title="reply" onClick={handleClick1} onMouseEnter={handleHover1} onMouseLeave={handleLeave1}>

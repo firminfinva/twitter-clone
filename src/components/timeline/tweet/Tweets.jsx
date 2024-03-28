@@ -3,7 +3,9 @@ import TweetProfilePhoto from "../../../assets/Tweet-Profile-Photo.png"
 import TweetProfilePhoto2 from "../../../assets/Tweet-Profile-Photo2.png"
 import TweetProfilePhoto3 from "../../../assets/Tweet-Profile-Photo3.png"
 import Image3 from "../../../assets/image3.png"
-let tweets = [
+import { useContext, useEffect, useState } from "react"
+import TweetsContext from "../../../contexts/TweetsContext"
+let tweets2 = [
   {
     "id" : "01",
     "tweet_avatar": TweetProfilePhoto,
@@ -97,14 +99,19 @@ let tweets = [
   
 ]
 export function Db(){
-return tweets
+  let  {tweets} = useContext(TweetsContext)
+  return tweets
 }
 export default function Tweets(){
-    
+  let  {tweets} = useContext(TweetsContext)
+  let [tweetsdata, setTweetsdata] = useState([])
 
-
+  useEffect(() => {
+    setTweetsdata(tweets)
+  },[tweets]);
+ 
     return (<>
-        {tweets.map(item => (
+        {tweetsdata?.reverse().map(item => (
             <Tweet key={item.id} value={item}/>
         ))}
     </>)

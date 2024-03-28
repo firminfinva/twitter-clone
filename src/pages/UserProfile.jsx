@@ -7,7 +7,6 @@ export default function UserProfile(){
     const db = Db()
     
     const theuser = db.filter((user)=> user['tweet_body']['tweet_author_title']==userId)[0]
-    console.log(theuser)
 
 
 

@@ -13,6 +13,7 @@ import Lists from "./pages/Lists.jsx";
 import Profile from "./pages/Profile.jsx";
 import More from "./pages/More.jsx";
 import UserProfile from "./pages/UserProfile.jsx";
+import {TweetsProvider } from "./contexts/TweetsContext.jsx";
 
 
 const router = createBrowserRouter([
@@ -68,6 +69,8 @@ const router = createBrowserRouter([
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <TweetsProvider>
+     <RouterProvider router={router} />
+    </TweetsProvider>
   </React.StrictMode>,
 )

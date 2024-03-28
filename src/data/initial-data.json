@@ -2,7 +2,7 @@
     "tweets": [
       {
         "id" : "01", 
-        "tweet_avatar": "src/assets/Tweet-Profile-Photo.png",
+        "tweet_avatar": "/Tweet-Profile-Photo.png",
         "tweet_body": {
             "tweet_author_title": "CNN",
             "tweet_authors": "CNN",
@@ -17,11 +17,11 @@
       },
       {
         "id" : "02", 
-        "tweet_avatar": "src/assets/Tweet-Profile-Photo2.png",
+        "tweet_avatar": "/Tweet-Profile-Photo2.png",
         "tweet_body": {
             "tweet_author_title": "The new york times",
             "tweet_authors": "nytimes",
-            "tweet_image": "src/assets/Image3.png",
+            "tweet_image": "/Image3.png",
             "tweet_time": "2h",
             "tweet_actions":{
                 "reply":"19",

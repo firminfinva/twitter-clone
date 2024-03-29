@@ -21,7 +21,7 @@
         "tweet_body": {
             "tweet_author_title": "The new york times",
             "tweet_authors": "nytimes",
-            "tweet_image": "/Image3.png",
+            "tweet_image": "/image3.png",
             "tweet_time": "2h",
             "tweet_actions":{
                 "reply":"19",

@@ -11,7 +11,7 @@ export const TweetsProvider = ({children}) => {
     let userObj ={
         "titleAuthor": "Bradley Ortiz",
         "titleAuthor2": "bradley_",
-        "userPorfile": "src/assets/Profile-Photo.png"
+        "tweet_avatar": "/Profile-Photo.png"
     }
     let [tweets, setTweets] = useState(TweetsData.tweets)
     let [createTweetsText, setCreateTweetsText] = useState("")

@@ -10,7 +10,7 @@ export default function TweetEditorButtons(){
       let updatedTweets = [...tweets]
       let newTweet = {
         "id": "0" + (tweets.length +1),
-        "tweet_avatar": user.userPorfile,
+        "tweet_avatar": user["tweet_avatar"],
         "tweet_body": {
           "tweet_author_title": user.titleAuthor,
           "tweet_authors": user.titleAuthor2,

@@ -515,7 +515,7 @@ rect{
   width: 50%;
   font-size: 10px;
 }
-.user-info>div:last-of-type, .trends-terms{
+.user-info>div:last-of-type, .trends-terms, .author2{
   color: #40444a;
   
 }
@@ -651,4 +651,8 @@ a{
 }
 .userProfile{
   padding: 0 20px 0 0;
+}
+.user_tweets{
+  margin-top: 20px;
+  border-top: 1px solid white;
 }

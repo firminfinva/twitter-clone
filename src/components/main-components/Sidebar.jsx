@@ -13,10 +13,12 @@ import UserProfile from "./../../assets/Profile-Photo.png"
 import More from "./../../assets/More.png"
 import ThreeDot from "./../../assets/More-2.png"
 import {Link} from "react-router-dom"
+import { useContext } from "react";
+import TweetsContext from "../../contexts/TweetsContext";
 
 
 export default function Sidebar() {
-
+    let {user} = useContext(TweetsContext)
     const menu = [
         {img: Normal, value: ""},
         {img: Home, value: "Home"},
@@ -37,10 +39,16 @@ export default function Sidebar() {
         
    
         <div className="sidebar-profile">
-            <img src={UserProfile} />
+            <Link to={`/userProfile/${user["titleAuthor"]}`}>
+               <img src={UserProfile} />
+            </Link>
+           
             <div className="user-info">
+                <Link to={`/userProfile/${user["titleAuthor"]}`}>
                 <div>Bradley Ortiz</div>
-                <div>@bradley_</div>
+                <div className="author2">@bradley_</div>
+                </Link>
+               
             </div>
             <img src={ThreeDot} />
         </div>

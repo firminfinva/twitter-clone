@@ -11,7 +11,7 @@ export const TweetsProvider = ({children}) => {
 
     let [tweets, setTweets] = useState(TweetsData.tweets)
     let [createTweetsText, setCreateTweetsText] = useState("")
-    let [user, setUser] = useState(TweetsData.user)
+    let [user, setUser] = useState(TweetsData["currentUser"])
  
     let contextData = {
         user,

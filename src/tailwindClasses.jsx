@@ -101,7 +101,7 @@ export const profileBack = `w-[70px] h-30 px-3 py-1 text-white bg-transparent bo
 
 export const profileImg = `mt-[-75px] ml-[50px] w-[150px] h-[150px] rounded-full object-cover`
 
-export const userProfile = `flex flex-col w-[77.5vw] px-0 py-1 border-l border-gray-700`
+export const userProfile = `flex flex-col w-[77.5vw] min-h-[100vh] px-0 py-1 border-l border-gray-700`
 
 export const backgroundProfile = `h-[100px] w-full bg-white`
 

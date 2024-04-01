@@ -15,6 +15,7 @@ import ThreeDot from "./../../assets/More-2.png"
 import {Link} from "react-router-dom"
 import { useContext } from "react";
 import TweetsContext from "../../contexts/TweetsContext";
+import { sidebar, sidebarDiv, sidebarDiv2, userInfo, author2,sidebarProfile ,sidebarProfileLast } from "../../tailwindClasses";
 
 
 export default function Sidebar() {
@@ -30,27 +31,27 @@ export default function Sidebar() {
         {img: Profile, value: "Profile"},
         {img: More, value: "More"},
     ]
-    return (<div className="sidebar">
+    return (<div className={sidebar}>
 
-        <div>
+        <div className={sidebarDiv}>
             {menu.map((me)=> <MenuButton key={me.value}  icon={me.img} value={me.value} />)}
              <Button/>
         </div>
         
    
-        <div className="sidebar-profile">
+        <div className={sidebarDiv2}>
             <Link to={`/userProfile/${user["titleAuthor"]}`}>
-               <img src={UserProfile} />
+               <img className={sidebarProfile} src={UserProfile} />
             </Link>
            
-            <div className="user-info">
+            <div className={userInfo}>
                 <Link to={`/userProfile/${user["titleAuthor"]}`}>
                 <div>Bradley Ortiz</div>
-                <div className="author2">@bradley_</div>
+                <div className={author2}>@bradley_</div>
                 </Link>
                
             </div>
-            <img src={ThreeDot} />
+            <img className={sidebarProfileLast} src={ThreeDot} />
         </div>
        
     </div>)

@@ -4,6 +4,7 @@ import Timeline from "./components/main-components/Timeline"
 import Sidebar from "./components/main-components/Sidebar"
 import Explore from "./pages/Explore";
 import ErrorPage from "./ErrorPage";
+import { outlet } from "./tailwindClasses";
 
 function App() {
  
@@ -11,11 +12,10 @@ function App() {
   return (
     <>
       <Sidebar/>
-      <div className="outlet">
+      <div className={outlet}>
         <Outlet/>
-      </div>
-    
-   
+        
+      </div>  
     
     </>
   )

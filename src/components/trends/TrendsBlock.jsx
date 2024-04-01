@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import TrendsContents from "./TrendsContents";
 import { useState } from "react";
+import { trendsBlock, trendsTitle, trendsBlockTitle } from "../../tailwindClasses";
 
 export default function TreendsBlock({title, icon}){
     const trends = [
@@ -17,8 +18,8 @@ export default function TreendsBlock({title, icon}){
     function showLessTrends(){
         setMoreTrends(3)
     }
-    return(<div className="trends-block">
-        <div className="trends-title"> <h6 className="title">{title}</h6><img src={icon} /></div>
+    return(<div className={trendsBlock}>
+        <div className={trendsTitle}> <h6 className={trendsBlockTitle}>{title}</h6><img className="bg-white" src={icon} /></div>
         {trends.map((trend,index)=> {
             if(index<moreTrends) return <TrendsContents key={trend.id} value={trend} />
         } )}

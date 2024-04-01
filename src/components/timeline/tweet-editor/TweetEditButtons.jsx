@@ -2,6 +2,7 @@ import TweetEditorActions from "./TweetEditorActions"
 import Button from "./Button"
 import { useContext } from "react"
 import TweetsContext from "../../../contexts/TweetsContext"
+import { tweetEditorButtons } from "../../../tailwindClasses"
 
 export default function TweetEditorButtons(){
    let {tweets, setTweets, createTweetsText,user} = useContext(TweetsContext)
@@ -26,7 +27,7 @@ export default function TweetEditorButtons(){
       updatedTweets.unshift(newTweet)
       setTweets(updatedTweets)
     }
-    return (<div className="tweet-editor-buttons">
+    return (<div className={tweetEditorButtons}>
       <TweetEditorActions/>
       <Button clickEvent={handleSubmit} /> 
       

@@ -1,7 +1,12 @@
 {
+    "user": {
+      "titleAuthor": "Bradley Ortiz",
+      "titleAuthor2": "bradley_",
+      "tweet_avatar": "/Profile-Photo.png"
+    },
     "tweets": [
       {
-        "id" : "01", 
+        "id" : "05", 
         "tweet_avatar": "/Tweet-Profile-Photo.png",
         "tweet_body": {
             "tweet_author_title": "CNN",
@@ -16,7 +21,7 @@
         }
       },
       {
-        "id" : "02", 
+        "id" : "04", 
         "tweet_avatar": "/Tweet-Profile-Photo2.png",
         "tweet_body": {
             "tweet_author_title": "The new york times",
@@ -30,7 +35,56 @@
                 "share":""},
                 "tweet_text": "Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land."
         }
+      },
+      {
+        "id" : "03",
+        "tweet_avatar": "/Tweet-Profile-Photo3.png",
+        "tweet_body": {
+          "tweet_author_title": "Twitter",
+          "tweet_authors": "Twitter",
+          "tweet_time": "Oct 29",
+          "tweet_actions":{
+                "reply":"6.8K",
+                "retweet":"36.6K",
+                "react":"267.1K",
+                "share":""},
+          "tweet_text": "BIG NEWS lol jk still Twitter"
+        }
+
+      },
+      {
+        "id" : "02",
+        "tweet_avatar": "/Tweet-Profile-Photo3.png",
+        "tweet_body": {
+          "tweet_author_title": "Twitter",
+          "tweet_authors": "Twitter",
+          "tweet_time": "Oct 24",
+          "tweet_actions":{
+            "reply":"118.k",
+            "retweet":"785.k",
+            "react":"3.3M",
+            "share":""},
+          "tweet_text": "hello literally everyone"
+        }
+
+      },{
+        "id" : "01",
+        "tweet_avatar": "/Tweet-Profile-Photo3.png",
+        "tweet_body": {
+          "tweet_author_title": "Twitter",
+          "tweet_authors": "Twitter",
+          "tweet_image": "/image3.png",
+          "tweet_time": "Oct 24",
+          "tweet_actions":{
+                "reply":"118.k",
+                "retweet":"785.k",
+                "react":"3.3M",
+                "share":""},
+          "tweet_text": "hello literally everyone"
+        }
+
       }
+
 
      
     ]

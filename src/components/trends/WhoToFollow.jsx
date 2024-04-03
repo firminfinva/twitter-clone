@@ -3,6 +3,7 @@ import TweetProfilePhoto from "./../../assets/Tweet-Profile-Photo.png"
 import TweetProfilePhoto2 from "./../../assets/Tweet-Profile-Photo2.png"
 import TweetProfilePhoto3 from "./../../assets/Tweet-Profile-Photo3.png"
 import { useState } from "react";
+import { whoTofollow, trendsTitle, title6 } from "../../tailwindClasses";
 
 export default function WhoToFollow({title}){
     const [showMore, setShowMore] = useState(3)
@@ -21,8 +22,8 @@ export default function WhoToFollow({title}){
         {id: "06", img:TweetProfilePhoto2 , owner: {title1: "title1", title2:"title2"}},
     ]
 
-    return (<div className="who-to-follow">
-      <div className="trends-title"> <h6 className="title">{title}</h6> </div>
+    return (<div className={whoTofollow}>
+      <div className={trendsTitle}> <h6 className={title6}>{title}</h6> </div>
         {follows.map((follow, index) =>{
             if(index<showMore) return <FollowContent key={follow.id} value={follow} />
         } )}

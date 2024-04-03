@@ -112,7 +112,7 @@ export default function Tweets(){
  
     return (<>
         {tweetsdata?.map(item => (
-            <Tweet key={item.id} value={item}/>
+            <Tweet key={item.id} value={item} index={item.id}/>
         ))}
     </>)
 }

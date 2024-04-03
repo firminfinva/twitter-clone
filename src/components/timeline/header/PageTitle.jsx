@@ -1,6 +1,8 @@
+import { pageTitle } from "../../../tailwindClasses"
+
 export default function PageTitle(){
     return(
-        <div className="page-title">
+        <div className={pageTitle}>
             Home
         </div>
     )

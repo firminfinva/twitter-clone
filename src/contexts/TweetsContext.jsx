@@ -8,14 +8,10 @@ export default TweetsContext;
 
 
 export const TweetsProvider = ({children}) => {
-    let userObj ={
-        "titleAuthor": "Bradley Ortiz",
-        "titleAuthor2": "bradley_",
-        "tweet_avatar": "/Profile-Photo.png"
-    }
+
     let [tweets, setTweets] = useState(TweetsData.tweets)
     let [createTweetsText, setCreateTweetsText] = useState("")
-    let [user, setUser] = useState(userObj)
+    let [user, setUser] = useState(TweetsData["currentUser"])
  
     let contextData = {
         user,

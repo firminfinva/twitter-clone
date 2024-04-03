@@ -19,6 +19,7 @@ export default function TweetEditorButtons(){
           "tweet_actions":{
               "reply":"0",
               "retweet":"0",
+              "liked": "false",
               "react":"0",
               "share":""},
           "tweet_text": createTweetsText

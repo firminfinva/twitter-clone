@@ -60,6 +60,8 @@ export const tweetActions = `flex items-center w-full gap-10`
 
 export const tweetActionsDiv ='flex  items-center'
 
+export const tweetActionVector = ``
+
 
 /* Trends */
 export const trends = `w-1/3 p-3 flex flex-col gap-2`

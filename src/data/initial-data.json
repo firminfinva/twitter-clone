@@ -2,7 +2,9 @@
     "currentUser": {
       "titleAuthor": "Bradley Ortiz",
       "titleAuthor2": "bradley_",
-      "tweet_avatar": "/Profile-Photo.png"
+      "tweet_avatar": "/Profile-Photo.png",
+      "followers":"234k",
+      "following":"4k"
     },
     "tweets": [
       {
@@ -15,6 +17,7 @@
             "tweet_actions":{
                 "reply":"57",
                 "retweet":"144",
+                "liked": "false",
                 "react":"184",
                 "share":""},
             "tweet_text": "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis."
@@ -31,6 +34,7 @@
             "tweet_actions":{
                 "reply":"19",
                 "retweet":"48",
+                "liked": "false",
                 "react":"482",
                 "share":""},
                 "tweet_text": "Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land."
@@ -46,7 +50,8 @@
           "tweet_actions":{
                 "reply":"6.8K",
                 "retweet":"36.6K",
-                "react":"267.1K",
+                "liked": "false",
+                "react":"267",
                 "share":""},
           "tweet_text": "BIG NEWS lol jk still Twitter"
         }
@@ -61,8 +66,9 @@
           "tweet_time": "Oct 24",
           "tweet_actions":{
             "reply":"118.k",
-            "retweet":"785.k",
-            "react":"3.3M",
+            "retweet":"785",
+            "liked": "false",
+            "react":"3000",
             "share":""},
           "tweet_text": "hello literally everyone"
         }
@@ -78,7 +84,8 @@
           "tweet_actions":{
                 "reply":"118.k",
                 "retweet":"785.k",
-                "react":"3.3M",
+                "liked": "false",
+                "react":"30000",
                 "share":""},
           "tweet_text": "hello literally everyone"
         }

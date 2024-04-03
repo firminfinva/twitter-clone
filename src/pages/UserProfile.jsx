@@ -15,7 +15,6 @@ export default function UserProfile(){
 
     let filterTweet2 = tweets.filter((tweet) => tweet["tweet_body"]["tweet_author_title"]== user.titleAuthor)
 
-    console.log("User", filterTweet.length)
 
     return(<div className={userProfile}>
         <GoBackButton/>
@@ -27,6 +26,15 @@ export default function UserProfile(){
             <h3 className="text-white">{theuser? theuser["tweet_body"]["tweet_author_title"]: user["titleAuthor"]}</h3>
             <div className="text-gray-700">@{theuser? theuser["tweet_body"]["tweet_authors"]: user["titleAuthor2"]}</div>
         </div>
+        {!theuser ? <div className="text-gray-400 flex gap-1 px-2">
+            <span>
+               followers: {user.followers}
+            </span>
+            <span>
+            following: {user.following}
+            </span>
+        </div>: ""}
+        
         <div className="mt-2">
            {filterTweet.length>0?filterTweet.map((tweet) => <Tweet value={tweet} />): filterTweet2.map((tweet) => <Tweet value={tweet} />)}
         </div>

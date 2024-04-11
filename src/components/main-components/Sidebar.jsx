@@ -38,8 +38,7 @@ export default function Sidebar() {
              <Button/>
         </div>
         
-   
-        <div className={sidebarDiv2}>
+        {user ?  <div className={sidebarDiv2}>
             <Link to={`/userProfile/${user["titleAuthor"]}`}>
                <img className={sidebarProfile} src={UserProfile} />
             </Link>
@@ -52,7 +51,8 @@ export default function Sidebar() {
                
             </div>
             <img className={sidebarProfileLast} src={ThreeDot} />
-        </div>
+        </div> : ""}
+       
        
     </div>)
 }

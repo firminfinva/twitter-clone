@@ -7,6 +7,7 @@ import { avatar, avatarImg } from '../../../tailwindClasses'
 export default function Avatar(){
     let {user} = useContext(TweetsContext)
     return (<div className={avatar}>
-       <Link to={`/userProfile/${user["titleAuthor"]}`}><img className={avatarImg}  src={user["tweet_avatar"] } /></Link> 
+        {user ? <Link to={`/userProfile/${user["titleAuthor"]}`}><img className={avatarImg}  src={user["tweet_avatar"] } /></Link> : ""}
+       
     </div>)
 }

@@ -4,5 +4,13 @@
             "source": "/(.*)",
             "destination": "/"
         }
+    ],
+    "version": 2,
+    "routes": [
+        {
+        "src": "/(.*)",
+        "dest": "https://my-json-server.typicode.com/firminfinva/twitter-clone/$1",
+        "methods": ["GET", "POST", "OPTIONS", "HEAD"]
+        }
     ]
 }

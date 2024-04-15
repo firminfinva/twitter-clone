@@ -8,7 +8,7 @@
     npm start 
 
 # Run the json-server: 
-    json-server --watch src/data/initial-data.json --port 3001
+    json-server --watch src/data/db.json --port 3001
 
 # Live version of the app 
     https://twitter-clone-six-sooty.vercel.app 

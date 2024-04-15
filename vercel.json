@@ -1,8 +1,10 @@
 {
-    "rewrites": [
+    "version": 2,
+    "routes": [
         {
-            "source": "/(.*)",
-            "destination": "/"
+        "src": "/(.*)",
+        "dest": "https://my-json-server.typicode.com/firminfinva/twitter-clone/$1",
+        "methods": ["GET", "POST", "OPTIONS", "HEAD"]
         }
     ]
 }

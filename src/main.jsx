@@ -70,7 +70,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <TweetsProvider>
-     <RouterProvider router={router} />
+      <RouterProvider router={router} />
     </TweetsProvider>
   </React.StrictMode>,
 )

@@ -8,8 +8,11 @@ import { useState } from "react"
 import { tweetActions } from "../../../tailwindClasses"
 import { tweetActionsDiv } from "../../../tailwindClasses"
 import TweetsContext from "../../../contexts/TweetsContext"
+import axios from "axios"
 
 export default function TweetActions({value, index}){
+
+
     let {tweets} = useContext(TweetsContext)
     const [onHover1, setOnHover1] = useState(false)
     const [onHover2, setOnHover2] = useState(false)
@@ -51,6 +54,9 @@ export default function TweetActions({value, index}){
     }
 
     function handleOnClick3(){
+
+        console.log("value in tActions", index)
+
         let like = 0
         let theTweet =  tweets.find((tweet) => tweet.id==index)
         if(theTweet["tweet_body"]["tweet_actions"].liked=="true"){
@@ -67,6 +73,18 @@ export default function TweetActions({value, index}){
 
         } 
         theTweet["tweet_body"]["tweet_actions"].react = like
+          
+ 
+          axios.patch(`http://localhost:3001/tweets/${index}`, theTweet)
+            .then(response => {
+              console.log('Object updated successfully:', response.data);
+            })
+            .catch(error => {
+              console.error('Error updating object:', error);
+            });
+
+
+       
 
     }
 

@@ -139,8 +139,8 @@
         "tweet_actions": {
           "reply": "0",
           "retweet": "0",
-          "liked": "true",
-          "react": 1,
+          "liked": "false",
+          "react": 0,
           "share": ""
         },
         "tweet_text": "gfgf"

@@ -1,7 +1,8 @@
 {
-    "functions": {
-      "api/server.js": {
-        "runtime": "nodejs12.x"
-      }
-    }
-  }
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/"
+        }
+    ]
+}

@@ -5,7 +5,7 @@
     cd twitter-clone 
     npm install 
 # Run the application: 
-    npm start 
+    npm run dev 
 
 # Run the json-server: 
     json-server --watch src/data/db.json --port 3001

@@ -37,7 +37,7 @@
           "reply": "118.k",
           "retweet": "785",
           "liked": "false",
-          "react": "3000",
+          "react": 3000,
           "share": ""
         },
         "tweet_text": "hello literally everyone"
@@ -54,7 +54,7 @@
           "reply": "6.8K",
           "retweet": "36.6K",
           "liked": "false",
-          "react": "267",
+          "react": 267,
           "share": ""
         },
         "tweet_text": "BIG NEWS lol jk still Twitter"
@@ -139,8 +139,8 @@
         "tweet_actions": {
           "reply": "0",
           "retweet": "0",
-          "liked": "true",
-          "react": 1,
+          "liked": "false",
+          "react": 0,
           "share": ""
         },
         "tweet_text": "gfgf"

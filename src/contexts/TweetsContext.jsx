@@ -7,7 +7,7 @@ export default TweetsContext;
 
 export const TweetsProvider = ({ children }) => {
   const [url, setUrl] = useState(
-    "https://twitter-clone-json-server-teyh.onrender.com"
+    "https://twitter-clone-express-c1fq.onrender.com"
   );
   let [tweets, setTweets] = useState();
   let [user, setUser] = useState();
@@ -29,6 +29,7 @@ export const TweetsProvider = ({ children }) => {
     user,
     tweets,
     setTweets,
+    url,
   };
 
   return (

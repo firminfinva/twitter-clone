@@ -9,6 +9,7 @@ import Button from "./Button";
 
 export default function TweetEditorForm() {
   let { tweets, user, url } = useContext(TweetsContext);
+
   const {
     register,
     handleSubmit,
@@ -39,6 +40,7 @@ export default function TweetEditorForm() {
         console.log("New post added:", response.data);
       })
       .catch((error) => {
+        console.log("url", url);
         console.error("Error adding post:", error);
       });
   }
